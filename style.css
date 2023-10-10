@@ -18,7 +18,7 @@
 
 header{
       background-image: linear-gradient( 90deg, var(--primary-color), rgb(4, 13, 47) 100%);
-      height: 100lvh;
+      min-height: 100lvh;
       display: flex;
       flex-direction: column;
 }
@@ -71,12 +71,80 @@ header{
       text-underline-offset: var(--font-size-1);
 }
 
+.nav-header-mobile{
+      display: none;
+      -webkit-user-select: none;
+      user-select: none;
+      color: white;
+      margin: 2.5rem 4.5rem;
+      font-size: var(--font-size-2);
+      z-index: 100;
+}
+
+.nav-header-mobile:hover{
+      color: var(--secondary-color);
+      cursor: pointer;
+}
+
+.nav-header-mobile [type="close"]{
+      display: none;
+}
+
+.mobile-menu{
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgb(4, 13, 47, 0.9);
+      color: var(--secondary-color);
+      width: 100lvw;
+      height: 100lvh;
+}
+.mobile-menu ul{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+}
+
+.mobile-menu ul li{
+      text-align: center;
+}
+
+.mobile-menu ul li a{
+      text-decoration: none;
+      color: var(--secondary-color);
+      font-size: var(--font-size-2);
+}
+
+.mobile-menu ul li a:hover{
+      text-decoration: underline;
+      text-underline-offset: var(--font-size-1);
+}
+
+
+@media screen and (max-width: 1000px){
+      .nav-header{
+            display: none;
+      }
+
+      .nav-header-mobile{
+            display: flex;
+            flex-direction: column;
+      }
+}
+
 .header-domain{
       flex: 1;
       display: flex;
       flex-direction: row;
       align-items: stretch;
 }
+
 
 .header-domain  section{
       flex: 1;
@@ -86,12 +154,10 @@ header{
 
 .header-domain  section article{
       flex: 1;
-      background-color: #f3f3f311;
-      margin: 4rem;
+      margin: 2.5rem 4.5rem;
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      padding: var(--font-size-3);
       gap: var(--font-size-3);
 
 }
@@ -120,6 +186,8 @@ header{
       text-align: justify;
       line-height: var(--font-size-4);
       color: #f3f3f36f;
+      column-count: 2;
+      column-gap: 4rem;
 }
 
 
@@ -130,4 +198,20 @@ header{
       background-repeat: no-repeat;
       background-position: center;
       align-items: stretch;
+}
+
+@media screen and (max-width: 1500px){
+      .header-domain{
+            flex-direction: column;
+      }
+
+      .header-domain > div{
+            display: none;
+      }
+}
+
+@media screen and (max-width: 1000px){
+      .header-domain  section article p{
+            column-count: 1;
+      }
 }
