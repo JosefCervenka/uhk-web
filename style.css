@@ -321,7 +321,7 @@ h3.container-subtitle{
       display: flex;
       flex-direction: row;
 }
-.container-containers div{
+.container-containers > div{
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -352,4 +352,38 @@ button.article-button{
 button.article-button:hover{
       background-color: var(--primary-color);
       color: var(--secondary-color);
+}
+
+.card{
+      margin: 1rem 0rem;
+
+      display: flex;
+      flex-direction: row;
+      background-color: #ededed;
+
+}
+
+.card .photo, .content {
+      padding-top: 1rem;
+      padding-right: 2rem;
+}
+
+
+.card .content h4{
+      font-size: var(--font-size-3);
+      padding-top: 0.25rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      font-weight: 300;
+}
+
+.card .content p{
+      text-align: left;
+      line-height: 1.75rem;
+}
+
+@media screen and (max-width: 1000px){
+      .card{
+            flex-direction: column;
+      }
 }
