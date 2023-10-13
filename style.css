@@ -129,6 +129,8 @@ header{
       color: var(--secondary-color);
       width: 100lvw;
       height: 100lvh;
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
 }
 .mobile-menu ul{
       display: flex;
@@ -197,6 +199,7 @@ header{
       word-spacing: 0.3rem;
       letter-spacing: 0.3rem;
       color: #f3f3f36f;
+      margin-top: 4rem;
 
 }
 
@@ -204,7 +207,6 @@ header{
       font-weight: 600;
       font-size: var(--font-size-4);
       text-transform: uppercase;
-
 }
 
 p{
