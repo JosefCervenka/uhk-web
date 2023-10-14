@@ -1,11 +1,11 @@
 :root{
       --primary-color: #040D2F;
       --secondary-color: #f3f3f3;
-      --tertiary-color: #7b004a;
       --light-gray-color: #7f7f7f;
+      --dark-gray-color: #020202;
 
 
-      --font-size-1: clamp(0.25rem, 2vw, 0.5rem);
+      --font-size-1: clamp(0.4rem, 2vw, 0.75rem);
       --font-size-2: clamp(0.5rem, 4vw, 1rem);
       --font-size-3: clamp(1rem, 6vw, 1.5rem);
       --font-size-4: clamp(1.5rem, 8vw, 2rem);
@@ -271,8 +271,8 @@ p{
 
 .btn-container button:hover{
       background-color: transparent;
-      color: var(--tertiary-color);
-      border: var(--tertiary-color) solid 1px;
+      background-color: #f3f3f3;
+      color: var(--primary-color);
 }
 
 @media screen and (max-width: 1500px){
@@ -390,4 +390,85 @@ button.article-button:hover{
       .card{
             flex-direction: column;
       }
+}
+
+footer{
+      background-color: var(--dark-gray-color);
+      display: flex;
+}
+
+@media  screen and (max-width: 1000px) {
+     footer{
+             flex-direction: column;
+     } 
+}
+
+footer > .footer-main{
+      color: var(--light-gray-color);
+      font-size: var(--font-size-1);
+}
+
+footer > .footer-main a{
+      color: var(--light-gray-color);
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+}
+
+footer > .footer-main a:hover{
+      color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+}
+
+footer > .footer-main a img{
+      margin-left: 1rem;
+}
+
+footer  .footer-icons {
+      flex: 1;
+      margin: 2.5rem 4.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: end;
+}
+
+@media screen and (max-width: 1000px) {
+      footer  .footer-icons{
+            justify-content: start;
+      }
+
+}
+
+footer .footer-main{
+      flex: 2;
+      margin: 2.5rem 4.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+}
+
+footer > .footer-icons > span{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: var(--light-gray-color);
+      width: 200px;
+      justify-content: justify;
+}
+
+footer > .footer-icons > span:hover{
+      color: var(--secondary-color);
+      cursor: pointer;
+}
+
+footer > .footer-icons > span > img{
+      margin-right: 1rem;
+}
+
+footer h3{
+      text-transform: uppercase;
+      font-weight: 300;
 }
