@@ -328,6 +328,11 @@ h3.container-subtitle{
       margin: 2.5rem 4.5rem;
 }
 
+.container-containers h4{
+      text-transform: uppercase;
+      margin-top: 0.75rem;
+}
+
 @media screen and (max-width: 1000px){
       .container-containers{
             flex-direction: column;
@@ -356,7 +361,6 @@ button.article-button:hover{
 
 .card{
       margin: 1rem 0rem;
-
       display: flex;
       flex-direction: row;
       background-color: #ededed;
