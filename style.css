@@ -1,3 +1,7 @@
+html {
+      scroll-behavior: smooth;
+}
+
 :root{
       --primary-color: #040D2F;
       --secondary-color: #f3f3f3;
@@ -38,6 +42,7 @@
       padding: 0;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
+      scroll-margin-top: 5rem;
 }
 
 body{
@@ -405,7 +410,6 @@ footer{
 
 footer > .footer-main{
       color: var(--light-gray-color);
-      font-size: var(--font-size-1);
 }
 
 footer > .footer-main a{
