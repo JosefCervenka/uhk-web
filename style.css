@@ -521,13 +521,13 @@ table {
 th{
       background-color: var(--primary-color);
       color: var(--secondary-color);
-    }
-    td, th {
+}
+td, th {
       border: 1px solid #dddddd;
       text-align: left;
       padding: 8px;
-    }
+}
     
-    tr:nth-child(even) {
+tr:nth-child(even) {
       background-color: #dddddd;
-    }
+}
