@@ -476,3 +476,58 @@ footer h3{
       text-transform: uppercase;
       font-weight: 300;
 }
+
+form{
+      display: flex;
+      flex-direction: column;
+}
+
+form input[type="text"], form input[type="tel"], form input[type="email"], form textarea{
+      font-size: var(--font-size-2);
+      border: solid 1px #040D2F;
+}
+
+form input[type="text"]:focus, form input[type="tel"]:focus, form input[type="email"]:focus, form textarea:focus{
+      border: solid 2px;
+      outline: none;
+}
+
+form input[type="submit"]{
+      margin-top: 2.5rem;
+      color: var(--primary-color);
+      border: solid 1px var(--primary-color);
+      outline: none;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      font-size: var(--font-size-2);
+      font-weight: 400;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      width: 200px;
+      font-weight: 400;
+}
+
+
+form input[type="submit"]:hover{
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+}
+
+table {
+      border-collapse: collapse;
+      width: 100%;
+      
+}
+th{
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+    }
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
