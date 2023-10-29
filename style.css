@@ -571,3 +571,8 @@ input[type=file]::file-selector-button {
       color: var(--light-gray-color);
       text-decoration: underline;
 }
+
+.footer-icons span a:visited:hover{
+      color: white;
+      text-decoration: underline;
+}
